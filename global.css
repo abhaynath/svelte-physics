@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("./fonts/opensans/opensans-regular/OpenSans-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("./fonts/opensans/opensans-bold/OpenSans-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotoregular";
+  src: url("./fonts/roboto/roboto-regular/Roboto-Regular-webfont.woff")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotobold";
+  src: url("./fonts/roboto/roboto-bold/Roboto-Bold-webfont.woff")
+    format("woff2");
+
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "firacode-regular";
+  src: url("./fonts/firacode/firacode-regular/FiraCode-Regular.woff2")
+    format("woff");
+
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --font-roboto: "robotoregular";
+  --font-opensans: "OpenSans-Regular";
+  --font-firacode: "firacode-regular";
+  --font-roboto-bold: "robotobold";
+  --font-opensans-bold: "OpenSans-Bold";
+  --fontSize: 14px;
+  --bgColor1: #400042;
+  --bgColorVar2: #710275;
+  --textColor1: white;
+  --txtColor1: #400042;
+  --bgColorHover1: #ce0089;
+  --borderColor1: rgb(153, 153, 153);
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+body {
+  color: var(--textColor1);
+  /* box-sizing: border-box; */
+  font-family: var(--font-roboto);
+  font-size: var(--fontSize);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+a {
+  color: rgb(0, 100, 200);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(0, 80, 160);
+}
+
+.osr {
+  font-family: var(--font-opensans);
+}
+
+.rbr {
+  font-family: var(--font-roboto);
+}
+.fcr {
+  font-family: var(--font-firacode);
+}
